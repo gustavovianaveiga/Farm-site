@@ -19,14 +19,16 @@ function App() {
 
       <main>
         <Navbar />
-        <section className='estrutura'>
-          <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path="/contato" element={<Contato />} />
-            <Route path="*" element={<Navigate to="/home" />} />
-          </Routes>
+        <div className="estruturafix">
+          <section className='estrutura'>
+            <Routes>
+              <Route path="/home" element={<Home />} />
+              <Route path="/contato" element={<Contato />} />
+              <Route path="*" element={<Navigate to="/home" />} />
+            </Routes>
 
-        </section>
+          </section>
+        </div>
         <footer></footer>
       </main>
 
