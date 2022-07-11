@@ -87,19 +87,23 @@ footer {
     height: 100%;
     width: 210px;
     display: flex;
-    justify-content: center;
     position: fixed;
     left: 0;
+    flex-direction: column;
 }
 
-.navbar ul {
-    margin-top: 100px;
+.links {
+    height: 300px;
+    margin-top: 50px;
+}
+
+.links ul {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.navbar ul a {
+.links ul a {
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
     color: white;
@@ -108,8 +112,45 @@ footer {
     left: 0;
 }
 
-.navbar ul a:hover {
+.links ul a:hover {
     border-bottom: 5px solid #DFAC2C;
     text-decoration: none;
     transition: all 0.2s;
+}
+
+
+/* botao X da navbar */
+
+.menux {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+.menux ul {
+    margin-top: 20px;
+    transform: rotate(45deg);
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.menux ul::before {
+    content: "";
+    transform: rotate(90deg);
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+
+/* logo farm da navbar */
+
+.navbar img {
+    width: 50px;
+    margin-top: 40px;
+    margin-left: 90px;
 }

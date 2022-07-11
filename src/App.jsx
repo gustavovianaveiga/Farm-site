@@ -3,6 +3,8 @@ import './App.css'
 import Home from "./pages/home";
 import Contato from "./pages/contato";
 import Navbar from "./components/navbar";
+import Loja from "./pages/loja";
+import Sobre from "./pages/sobre";
 function App() {
 
 
@@ -24,6 +26,8 @@ function App() {
             <Routes>
               <Route path="/home" element={<Home />} />
               <Route path="/contato" element={<Contato />} />
+              <Route path='/loja' element={<Loja />} />
+              <Route path='/sobre' element={<Sobre />} />
               <Route path="*" element={<Navigate to="/home" />} />
             </Routes>
 
