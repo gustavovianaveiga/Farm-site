@@ -1,6 +1,10 @@
+import { Link } from "react-router-dom";
 function Navbar() {
     return (
-        <nav></nav>
+        <nav className='navbar'>
+            <Link to="/contato">contato</Link>
+        </nav>
+
     )
 }
 export default Navbar
