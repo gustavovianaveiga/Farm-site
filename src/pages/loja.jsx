@@ -1,6 +1,9 @@
+
 function Loja() {
     return (
-        <p>Loja</p>
+        <div>
+            <p>loja</p>
+        </div>
     )
 }
 export default Loja

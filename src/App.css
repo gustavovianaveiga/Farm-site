@@ -117,6 +117,8 @@ footer {
     height: 100%;
     box-shadow: 0px -0px 30px 0px black;
     background: #212121;
+    display: flex;
+    justify-content: center;
 }
 
 .estrutura p {

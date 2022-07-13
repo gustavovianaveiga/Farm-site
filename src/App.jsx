@@ -13,10 +13,8 @@ function App() {
   return (
     <div className="App">
       <header>
-
         <div className="header-flex">
           <Navbar />
-
           <section className="header">
             <Hamburguer />
             <img src='/src/img/farm-logo.png' alt="farm-logo" className="farmlogo" />
@@ -25,7 +23,6 @@ function App() {
       </header>
 
       <main>
-
         <div className="estruturafix">
           <section className='estrutura'>
             <Routes>
@@ -35,16 +32,12 @@ function App() {
               <Route path='/sobre' element={<Sobre />} />
               <Route path="*" element={<Navigate to="/home" />} />
             </Routes>
-
           </section>
         </div>
         <footer>
           <div className='footer'></div>
         </footer>
       </main>
-
-
-
     </div>
   )
 }
