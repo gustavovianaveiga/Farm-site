@@ -11,16 +11,21 @@ function App() {
 
   return (
     <div className="App">
-
       <header>
-        <section className="header">
-          <img src='/src/img/farm-logo.png' alt="farm-logo" className="farmlogo" />
 
-        </section>
+        <div className="header-flex">
+          <Navbar />
+          <div className="hamburguer">
+            <ul className='botaohamburguer'></ul>
+          </div>
+          <section className="header">
+            <img src='/src/img/farm-logo.png' alt="farm-logo" className="farmlogo" />
+          </section>
+        </div>
       </header>
 
       <main>
-        <Navbar />
+
         <div className="estruturafix">
           <section className='estrutura'>
             <Routes>
@@ -33,7 +38,9 @@ function App() {
 
           </section>
         </div>
-        <footer></footer>
+        <footer>
+          <div className='footer'></div>
+        </footer>
       </main>
 
 
