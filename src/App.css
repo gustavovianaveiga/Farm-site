@@ -14,6 +14,7 @@ html,
 
 header {
     height: 80px;
+    width: 100%;
 }
 
 main {
@@ -37,7 +38,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 55%;
+    width: 80%;
+    position: absolute;
 }
 
 .header-flex {
@@ -53,14 +55,15 @@ footer {
 
 .farmlogo {
     width: 60px;
+    position: absolute;
 }
 
 .hamburguer {
     height: 30px;
     width: 40px;
-    margin-top: 50px;
-    margin-left: 50px;
     position: absolute;
+    left: 10px;
+    transition: all 0.3s
 }
 
 .botaohamburguer {
@@ -129,7 +132,7 @@ footer {
     box-shadow: 0px -0px 30px 0px black;
     background: #1A1B1C;
     height: 100%;
-    width: 210px;
+    width: 0px;
     display: flex;
     position: fixed;
     left: 0;
@@ -141,9 +144,10 @@ footer {
 .links {
     height: 220px;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: -10px;
     width: 90px;
-    transition: all 1s
+    transition: all 1s;
+    opacity: 0;
 }
 
 .links ul {
@@ -175,8 +179,9 @@ footer {
     width: 30px;
     height: 30px;
     margin-top: 20px;
-    margin-left: 90px;
-    transition: all 1s
+    margin-left: -50px;
+    transition: all 1s;
+    opacity: 0;
 }
 
 .menux ul:hover,
@@ -208,8 +213,9 @@ footer {
 .logonavbar {
     width: 50px;
     margin-top: 40px;
-    margin-left: 90px;
-    transition: all 1s
+    margin-left: -50px;
+    transition: all 1s;
+    opacity: 0;
 }
 
 

@@ -5,6 +5,7 @@ import Contato from "./pages/contato";
 import Navbar from "./components/navbar";
 import Loja from "./pages/loja";
 import Sobre from "./pages/sobre";
+import Hamburguer from "./components/hamburguer"
 function App() {
 
 
@@ -15,10 +16,9 @@ function App() {
 
         <div className="header-flex">
           <Navbar />
-          <div className="hamburguer">
-            <ul className='botaohamburguer'></ul>
-          </div>
+
           <section className="header">
+            <Hamburguer />
             <img src='/src/img/farm-logo.png' alt="farm-logo" className="farmlogo" />
           </section>
         </div>

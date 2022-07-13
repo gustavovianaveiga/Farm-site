@@ -5,6 +5,9 @@ function Navbar() {
         const $x = document.querySelector(".menux");
         const $img = document.querySelector(".logonavbar");
         const $links = document.querySelector(".links");
+        const $hamburguer = document.querySelector('.hamburguer');
+
+        setTimeout(() => { $hamburguer.style.opacity = '1'; }, 200);
         $x.style.marginLeft = '-50px';
         $x.style.opacity = '0';
         $img.style.marginLeft = '-50px';
@@ -12,6 +15,7 @@ function Navbar() {
         $links.style.marginLeft = '-100px';
         $links.style.opacity = '0';
         $navbar.style.width = "0px";
+
     };
     return (
         <nav className='navbar'>
