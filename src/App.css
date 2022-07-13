@@ -90,17 +90,22 @@ footer {
     position: fixed;
     left: 0;
     flex-direction: column;
+    transition: all 1s
 }
 
 .links {
-    height: 300px;
+    height: 220px;
     margin-top: 50px;
+    margin-left: 60px;
+    width: 90px;
+    transition: all 1s
 }
 
 .links ul {
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: all 1s;
 }
 
 .links ul a {
@@ -109,13 +114,13 @@ footer {
     color: white;
     text-decoration: none;
     margin-bottom: 20px;
-    left: 0;
 }
 
 .links ul a:hover {
-    border-bottom: 5px solid #DFAC2C;
+    border-bottom: 3px solid #DFAC2C;
     text-decoration: none;
     transition: all 0.2s;
+    color: #DFAC2C
 }
 
 
@@ -126,6 +131,12 @@ footer {
     height: 30px;
     margin-top: 20px;
     margin-left: 90px;
+    transition: all 1s
+}
+
+.menux ul:hover,
+.menux ul:hover:before {
+    background-color: #DFAC2C
 }
 
 .menux ul {
@@ -149,8 +160,9 @@ footer {
 
 /* logo farm da navbar */
 
-.navbar img {
+.logonavbar {
     width: 50px;
     margin-top: 40px;
     margin-left: 90px;
+    transition: all 1s
 }
