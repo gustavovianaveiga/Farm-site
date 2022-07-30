@@ -25,7 +25,7 @@ function Navbar() {
                     <Link to="/home">inicio</Link>
                     <Link to="/loja">loja</Link>
                     <Link to="/contato">contato</Link>
-                    <Link to="/sobre">sobre</Link>
+                    <Link to="/login">login</Link>
                 </ul>
             </div>
             <div className='menux' onClick={botaox}>

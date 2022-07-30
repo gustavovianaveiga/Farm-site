@@ -66,6 +66,12 @@ footer {
     transition: all 0.3s
 }
 
+.botaohamburguer:hover,
+.botaohamburguer:hover::after,
+.botaohamburguer:hover::before {
+    background-color: #DFAC2C;
+}
+
 .botaohamburguer {
     height: 2px;
     background-color: white;
@@ -89,6 +95,19 @@ footer {
     width: 40px;
     position: absolute;
     margin-top: 20px;
+}
+
+
+/* black/white mode */
+
+.mode {
+    width: 35px;
+    position: absolute;
+    left: 80px;
+    margin-top: -22px;
+    transition: all 0.3s;
+    filter: invert(100%);
+    cursor: pointer;
 }
 
 
@@ -119,12 +138,7 @@ footer {
     background: #212121;
     display: flex;
     justify-content: center;
-}
-
-.estrutura p {
-    margin-top: 90px;
-    font-size: 60px;
-    font-family: 'Bebas Neue', cursive;
+    align-items: center;
 }
 
 
@@ -231,4 +245,65 @@ footer {
     background-color: #272727;
     border-radius: 10px;
     border: 2px solid rgb(22, 22, 22);
+}
+
+
+/* login page */
+
+.login {
+    /* border: 2px solid #131313; */
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    /* background: rgba(0, 0, 0, 0.25); */
+    box-shadow: 0 0px 32px 0 rgba(0, 0, 0, 0.333);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+}
+
+.login input {
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid rgb(225, 174, 47, 0.459);
+    width: 300px;
+    height: 30px;
+    color: rgb(225, 174, 47, 0.459);
+}
+
+.login input:focus {
+    border: 2px solid rgba(225, 175, 47, 0.459);
+    outline: none;
+}
+
+.login input[type="submit"] {
+    cursor: pointer;
+    border: 3px solid rgba(225, 175, 47, 0.459);
+    width: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.login input::placeholder {
+    color: #dfac2c6d;
+    padding-left: 10px;
+}
+
+.login img {
+    margin-bottom: 20px;
+}
+
+.login p {
+    color: rgb(113, 111, 111);
+}
+
+.login p a {
+    text-decoration: none;
+    color: #dfac2c96;
+    cursor: pointer;
 }

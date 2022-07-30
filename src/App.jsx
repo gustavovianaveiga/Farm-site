@@ -4,8 +4,10 @@ import Home from "./pages/home";
 import Contato from "./pages/contato";
 import Navbar from "./components/navbar";
 import Loja from "./pages/loja";
-import Sobre from "./pages/sobre";
 import Hamburguer from "./components/hamburguer"
+import Login from "./pages/login";
+import Singup from "./pages/singup";
+import Mode from "./components/mode";
 function App() {
 
 
@@ -17,6 +19,7 @@ function App() {
           <Navbar />
           <section className="header">
             <Hamburguer />
+            <Mode />
             <img src='/src/img/farm-logo.png' alt="farm-logo" className="farmlogo" />
           </section>
         </div>
@@ -26,11 +29,12 @@ function App() {
         <div className="estruturafix">
           <section className='estrutura'>
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/pagina-inicial" element={<Home />} />
               <Route path="/contato" element={<Contato />} />
               <Route path='/loja' element={<Loja />} />
-              <Route path='/sobre' element={<Sobre />} />
-              <Route path="*" element={<Navigate to="/home" />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/criar-conta' element={<Singup />} />
+              <Route path="*" element={<Navigate to="/pagina-inicial" />} />
             </Routes>
           </section>
         </div>
